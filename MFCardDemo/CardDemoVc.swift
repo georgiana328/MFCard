@@ -8,7 +8,8 @@
 
 import UIKit
 import MFCard
-class CardDemoVc: UIViewController,MFCardDelegate {
+
+class CardDemoVc: UIViewController, MFCardDelegate {
 
     @IBOutlet weak var creditCard: MFCardView!
     override func viewDidLoad() {
@@ -54,15 +55,5 @@ class CardDemoVc: UIViewController,MFCardDelegate {
     func cardDidClose() {
         print("Card Close")
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

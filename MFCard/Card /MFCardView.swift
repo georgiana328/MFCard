@@ -15,12 +15,9 @@ public protocol MFCardDelegate {
 }
 
 extension MFCardDelegate{
-    func cardTypeDidIdentify(_ cardType :String){
-        //optional
-    }
-    func cardDidClose(){
-        //optional
-    }
+    func cardDoneButtonClicked(_ card:Card?, error:String?) {}
+    func cardTypeDidIdentify(_ cardType :String){}
+    func cardDidClose(){}
 }
 
 @IBDesignable public class MFCardView: UIView {

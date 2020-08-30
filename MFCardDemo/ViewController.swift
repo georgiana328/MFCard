@@ -8,7 +8,7 @@
 
 import UIKit
 import MFCard
-class ViewController: UIViewController,MFCardDelegate {
+class ViewController: UIViewController, MFCardDelegate {
     
 
     override func viewDidLoad() {
