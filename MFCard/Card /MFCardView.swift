@@ -14,7 +14,7 @@ public protocol MFCardDelegate {
     func cardDidClose()
 }
 
-public extension MFCardDelegate{
+extension MFCardDelegate{
     func cardDoneButtonClicked(_ card:Card?, error:String?) {}
     func cardTypeDidIdentify(_ cardType :String){}
     func cardDidClose(){}
